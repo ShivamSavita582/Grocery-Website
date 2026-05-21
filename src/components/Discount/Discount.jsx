@@ -1,0 +1,21 @@
+import React from 'react'
+import Button from '../Button/Button'
+import FreshFruits from '../../assets/fresh-fruits.png'
+
+const Discount = () => {
+  return (
+    <section className='bg-zinc-100 bg-no-repeat bg-right bg-contain' style={{backgroundImage:`url(${FreshFruits})`}}>
+        <div className='flex max-w-[1900px] mx-auto px-10 py-10'>
+            <span className='text-9xl text-orange-500 font-bold transform -rotate-90'>20%</span>
+            <div className='max-w-[700px]'>
+                <h3 className='text-7xl text-zinc-800 font-bold'>First Order Discount!</h3>
+                <p className='text-zinc-700 text-xl'>Enjoy an exclusive first order discount on our grocery website! Shop fresh essentials and save big on your first purchase. Fast delivery and quality guaranteed
+                </p>
+                <Button content='Get a discount'/>
+            </div>
+        </div>
+    </section>
+  )
+}
+
+export default Discount
